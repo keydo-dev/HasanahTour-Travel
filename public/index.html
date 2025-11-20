@@ -1,12 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasanah Tour</title>
-    <link rel="stylesheet" href="../src/output.css">
+    <title>Hasanah Tour - Perjalanan Ibadah Terbaik</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <h1 class="text-5xl text-blue-900">hello world</h1>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <header class="absolute top-0 w-full z-50">
+        <div class="container mx-auto flex flex-wrap p-6 flex-col md:flex-row items-center">
+            <a class="flex title-font font-bold items-center text-white mb-4 md:mb-0 cursor-pointer">
+                <img src="../src/assets/images/logo-hasanah.png"
+                    class="h-12 w-auto bg-white/90 rounded px-2 py-1 backdrop-blur-sm shadow-lg"
+                    alt="Hasanah Tour Logo">
+            </a>
+
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center space-x-8">
+                <a href="#" class="text-white/80 hover:text-white transition duration-300 font-medium">Beranda</a>
+                <a href="#" class="text-white/80 hover:text-white transition duration-300 font-medium">Paket Umroh</a>
+                <a href="#" class="text-white/80 hover:text-white transition duration-300 font-medium">Haji Plus</a>
+                <a href="#" class="text-white/80 hover:text-white transition duration-300 font-medium">Tentang Kami</a>
+            </nav>
+
+            <div class="inline-flex lg:justify-end ml-0 lg:ml-8 mt-4 md:mt-0">
+                <button
+                    class="inline-flex items-center bg-orange-600 border-0 py-2 px-5 focus:outline-none hover:bg-orange-700 rounded-full text-white font-medium text-sm transition-all shadow-lg hover:shadow-orange-500/30">
+                    Hubungi Kami
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1565552629477-2767e2960dc4?q=80&w=2000&auto=format&fit=crop"
+                alt="Background Makkah" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="max-w-4xl mx-auto">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-orange-500/20 border border-orange-400/30 text-orange-100 text-xs font-semibold tracking-wider mb-6 backdrop-blur-sm">
+                    RESMI KEMENAG RI
+                </span>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                    Wujudkan Impian <span class="text-orange-500">Baitullah</span> <br> Dengan Nyaman & Aman
+                </h1>
+                <p class="mb-10 text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto font-light">
+                    Mitra perjalanan ibadah Umroh dan Haji terbaik Anda. Mengutamakan pelayanan prima sesuai sunnah,
+                    fasilitas nyaman, dan harga yang transparan.
+                </p>
+
+                <div class="flex justify-center gap-4 flex-col sm:flex-row">
+                    <button
+                        class="inline-flex justify-center items-center text-white bg-orange-600 border-0 py-3 px-8 focus:outline-none hover:bg-orange-700 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-orange-500/40 transform hover:-translate-y-1">
+                        Lihat Paket Promo
+                    </button>
+
+                    <button
+                        class="inline-flex justify-center items-center text-white bg-white/10 border border-white/30 py-3 px-8 focus:outline-none hover:bg-white/20 rounded-full text-lg font-medium backdrop-blur-sm transition-all hover:border-white/50">
+                        Konsultasi Gratis
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 w-full flex justify-center animate-bounce text-white/50">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6 py-12">
+            <div
+                class="flex flex-col md:flex-row items-center justify-center gap-8 opacity-80 hover:opacity-100 transition-opacity">
+                <div class="text-right hidden md:block">
+                    <p class="text-gray-500 text-sm font-medium uppercase tracking-wide">Izin Resmi</p>
+                    <p class="text-gray-900 font-semibold">Kementerian Agama RI</p>
+                </div>
+
+                <div class="hidden md:block w-px h-12 bg-gray-300"></div>
+
+                <img class="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
+                    src="../src/assets/images/logo-izin.png" alt="Logo Perizinan Hasanah Tour & Travel">
+
+                <p class="text-center text-gray-500 text-sm md:hidden mt-2">Terdaftar Resmi di Kementerian Agama RI</p>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
